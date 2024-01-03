@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // icons
-import { RiTwitterLine, RiLinkedinLine, RiGithubLine, RiMailLine} from "react-icons/ri"
+import { RiTwitterLine, RiLinkedinLine, RiGithubLine} from "react-icons/ri"
 
 const Socials = () => {
   return <div className="flex items-center gap-x-5 text-lg">
