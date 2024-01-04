@@ -19,15 +19,14 @@ import {
 import { 
   TbSql 
  } from "react-icons/tb";
-
 import {
   SiPostman,
   SiDjango,
   SiMongodb,
   SiHeroku,
   SiCplusplus,
+  SiNextdotjs,
 } from "react-icons/si";
-
 
 //  data
 const aboutData = [
@@ -37,28 +36,29 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaBootstrap />,
-          <SiCplusplus />,
-          <FaCss3 />,
-          <SiDjango />,
-          <FaHtml5 />,
-          <FaJs />,
-          <FaReact />,
-          <FaJava />,
-          <SiMongodb />,
-          <FaNode />,
+          { icon: <FaBootstrap />, key: 'bootstrap' },
+          { icon: <SiCplusplus />, key: 'cplusplus' },
+          { icon: <FaCss3 />, key: 'css3' },
+          { icon: <SiDjango />, key: 'django' },
+          { icon: <FaHtml5 />, key: 'html5' },
+          { icon: <FaJs />, key: 'js' },
+          { icon: <SiNextdotjs />, key: 'nextjs' },
+          { icon: <FaReact />, key: 'react' },
+          { icon: <FaJava />, key: 'java' },
+          { icon: <SiMongodb />, key: 'mongodb' },
+          { icon: <FaNode />, key: 'node' },
         ],
       },
       {
         title: 'Tools',
         icons: [
-          <FaAws />,
-          <FaGitAlt/>,
-          <FaGithub/>,
-          <SiHeroku />,
-          <FaLinux/>,
-          <SiPostman />,
-          <TbSql/>
+          { icon: <FaAws />, key: 'aws' },
+          { icon: <FaGitAlt/>, key: 'gitall' },
+          { icon: <FaGithub/>, key: 'github' },
+          { icon: <SiHeroku />, key: 'heroku' },
+          { icon: <FaLinux/>, key: 'linux' },
+          { icon: <SiPostman />, key: 'postman' },
+          { icon: <TbSql/>, key: 'sql' },
         ],
       },
     ],
@@ -143,7 +143,7 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-  <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+  <div className="h-full bg-primary/30 py-32 text-center xl:text-left items-center">
     <Circles />
     {/* avatar img */}
     <motion.div 
@@ -165,7 +165,7 @@ const About = () => {
           exit="hidden"
           className="h2"
         >
-          Hi, I'm <span className="text-accent">Aayush</span>
+          Hi, I&apos;m <span className="text-accent">Aayush</span>
         </motion.h2>
         <motion.p 
           variants={fadeIn('right', 0.4)} 
@@ -223,7 +223,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden" 
-        className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+        className="flex flex-col w-full xl:max-w-[48%] h-[335px]"
       >
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex) =>{
@@ -252,7 +252,7 @@ const About = () => {
                 <div className="flex gap-x-4">
                 {/* icons */}
                 {item.icons?.map((icon, iconIndex) => {
-                  return <div className="text-2xl text-white">{icon}</div>;
+                  return <div key={iconIndex} className="text-2xl text-white">{icon.icon}</div>;
                 })}
                 </div>
               </div>

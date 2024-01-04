@@ -27,8 +27,8 @@ const Home = () => {
           exit="hidden"
           className='h1'
         >
-          Transforming Ideas <br /> Into {' '}
-          <span className='text-accent'>Digital Reality</span>
+          I&apos;m a <br /> Web {' '}
+          <span className='text-accent'>Developer.</span>
         </motion.h1>
         {/* subtitle */}
         <motion.p 
@@ -38,7 +38,7 @@ const Home = () => {
           exit="hidden"
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Crafting seamless digital experiences with a passion for clean code and innovative design. Transforming ideas into responsive and user-friendly websites that leave a lasting impression. Explore my work and witness the fusion of creativity and technical expertise.
         </motion.p>
         {/* btn */}
         <div className='flex justify-center xl:hidden relative'>
