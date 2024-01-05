@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -71,6 +72,8 @@ export const serviceData = [
     description: 'Improving online visibility through strategic optimization, increasing organic traffic in search engine results.',
   },
 ];
+=======
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
 
 
 const ServiceSlider = () => {

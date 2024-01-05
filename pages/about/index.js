@@ -19,13 +19,20 @@ import {
 import { 
   TbSql 
  } from "react-icons/tb";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
 import {
   SiPostman,
   SiDjango,
   SiMongodb,
   SiHeroku,
   SiCplusplus,
+<<<<<<< HEAD
   SiNextdotjs,
+=======
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
 } from "react-icons/si";
 
 //  data
@@ -36,6 +43,7 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
+<<<<<<< HEAD
           { icon: <FaBootstrap />, key: 'bootstrap' },
           { icon: <SiCplusplus />, key: 'cplusplus' },
           { icon: <FaCss3 />, key: 'css3' },
@@ -47,11 +55,24 @@ const aboutData = [
           { icon: <FaJava />, key: 'java' },
           { icon: <SiMongodb />, key: 'mongodb' },
           { icon: <FaNode />, key: 'node' },
+=======
+          <FaBootstrap />,
+          <SiCplusplus />,
+          <FaCss3 />,
+          <SiDjango />,
+          <FaHtml5 />,
+          <FaJs />,
+          <FaReact />,
+          <FaJava />,
+          <SiMongodb />,
+          <FaNode />,
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
         ],
       },
       {
         title: 'Tools',
         icons: [
+<<<<<<< HEAD
           { icon: <FaAws />, key: 'aws' },
           { icon: <FaGitAlt/>, key: 'gitall' },
           { icon: <FaGithub/>, key: 'github' },
@@ -59,6 +80,15 @@ const aboutData = [
           { icon: <FaLinux/>, key: 'linux' },
           { icon: <SiPostman />, key: 'postman' },
           { icon: <TbSql/>, key: 'sql' },
+=======
+          <FaAws />,
+          <FaGitAlt/>,
+          <FaGithub/>,
+          <SiHeroku />,
+          <FaLinux/>,
+          <SiPostman />,
+          <TbSql/>
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
         ],
       },
     ],
@@ -143,7 +173,11 @@ import CountUp from "react-countup";
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
+<<<<<<< HEAD
   <div className="h-full bg-primary/30 py-32 text-center xl:text-left items-center">
+=======
+  <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
     <Circles />
     {/* avatar img */}
     <motion.div 
@@ -165,7 +199,11 @@ const About = () => {
           exit="hidden"
           className="h2"
         >
+<<<<<<< HEAD
           Hi, I&apos;m <span className="text-accent">Aayush</span>
+=======
+          Hi, I'm <span className="text-accent">Aayush</span>
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
         </motion.h2>
         <motion.p 
           variants={fadeIn('right', 0.4)} 
@@ -223,7 +261,11 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden" 
+<<<<<<< HEAD
         className="flex flex-col w-full xl:max-w-[48%] h-[335px]"
+=======
+        className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
       >
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex) =>{
@@ -252,7 +294,11 @@ const About = () => {
                 <div className="flex gap-x-4">
                 {/* icons */}
                 {item.icons?.map((icon, iconIndex) => {
+<<<<<<< HEAD
                   return <div key={iconIndex} className="text-2xl text-white">{icon.icon}</div>;
+=======
+                  return <div className="text-2xl text-white">{icon}</div>;
+>>>>>>> 38921d47099738820e9e289ccd1685884a258d19
                 })}
                 </div>
               </div>
