@@ -27,13 +27,8 @@ const Home = () => {
           exit="hidden"
           className='h1'
         >
-<<<<<<< HEAD
           I&apos;m a <br /> Web {' '}
           <span className='text-accent'>Developer.</span>
-=======
-          Transforming Ideas <br /> Into {' '}
-          <span className='text-accent'>Digital Reality</span>
->>>>>>> 38921d47099738820e9e289ccd1685884a258d19
         </motion.h1>
         {/* subtitle */}
         <motion.p 
@@ -43,11 +38,9 @@ const Home = () => {
           exit="hidden"
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
         >
-<<<<<<< HEAD
-          Crafting seamless digital experiences with a passion for clean code and innovative design. Transforming ideas into responsive and user-friendly websites that leave a lasting impression. Explore my work and witness the fusion of creativity and technical expertise.
-=======
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.
->>>>>>> 38921d47099738820e9e289ccd1685884a258d19
+          Crafting seamless digital experiences with a passion for clean code and innovative design. 
+          Transforming ideas into responsive and user-friendly websites that leave a lasting impression. 
+          Explore my work and witness the fusion of creativity and technical expertise.
         </motion.p>
         {/* btn */}
         <div className='flex justify-center xl:hidden relative'>
