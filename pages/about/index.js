@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faC } from '@fortawesome/free-solid-svg-icons';
+import { TypeAnimation } from "react-type-animation";
 
 // icons
 import {
@@ -16,9 +15,11 @@ import {
   FaGithub,
   FaAws,
 } from "react-icons/fa";
+
 import { 
   TbSql 
  } from "react-icons/tb";
+
 import {
   SiPostman,
   SiDjango,
@@ -27,6 +28,17 @@ import {
   SiCplusplus,
   SiNextdotjs,
 } from "react-icons/si";
+
+// components
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+
+// framer motion
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
+// counter
+import CountUp from "react-countup";
 
 //  data
 const aboutData = [
@@ -129,17 +141,6 @@ const aboutData = [
   },
 ];
 
-// components
-import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
-
-// framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-
-// counter
-import CountUp from "react-countup";
-
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
@@ -163,9 +164,24 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="h2"
+          className="h2 mt-3"
         >
-          Hi, I&apos;m <span className="text-accent">Aayush</span>
+          Hi, I&apos;m 
+          <br></br>
+          <span className="text-accent">
+            <TypeAnimation 
+              sequence={[
+                "Aayush",
+                1000,
+                "Web Developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{fontSize: '2.5rem', display: 'inline-block' }}
+              repeat={Infinity}
+            />
+          </span>
         </motion.h2>
         <motion.p 
           variants={fadeIn('right', 0.4)} 
@@ -177,13 +193,17 @@ const About = () => {
           Dedicated and driven Computer Engineering student with a passion for technology and problem-solving.
           Quick learner with a strong adaptability to new technologies and programming languages. 
         </motion.p>
+        <div>
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Hire Me</button>
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-900 text-accent border-white border-2 mt-3">Download CV</button>
+        </div>
         {/* counters */}
         <motion.div
           variants={fadeIn('right', 0.6)} 
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="hidden md:flex md:max-w-wl xl:max-w-none mx-auto xl:mx-0 mb-8"
+          className="hidden md:flex md:max-w-wl xl:max-w-none mx-auto xl:mx-0 mb-8 mt-5"
         >
           <div className="flex flex-1 xl:gap-x-6">
             {/* experience */}
@@ -223,7 +243,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden" 
-        className="flex flex-col w-full xl:max-w-[48%] h-[335px]"
+        className="flex flex-col w-full xl:max-w-[48%] h-[335px] mt-2"
       >
         <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
           {aboutData.map((item, itemIndex) =>{
