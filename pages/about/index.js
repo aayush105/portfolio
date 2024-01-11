@@ -39,6 +39,7 @@ import { fadeIn } from "../../variants";
 
 // counter
 import CountUp from "react-countup";
+import Link from "next/link";
 
 //  data
 const aboutData = [
@@ -194,8 +195,14 @@ const About = () => {
           Quick learner with a strong adaptability to new technologies and programming languages. 
         </motion.p>
         <div>
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Hire Me</button>
-          <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-900 text-accent border-white border-2 mt-3">Download CV</button>
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">
+            <Link href="/contact">Hire Me</Link>
+          </button>
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-900 text-accent border-white border-2 mt-3">
+            <a href="https://drive.google.com/file/d/10iwg_p-Yseh5BVjNb9oBukBNjMmKGe_5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              Download CV
+            </a>
+          </button>
         </div>
         {/* counters */}
         <motion.div

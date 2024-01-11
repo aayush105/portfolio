@@ -29,7 +29,7 @@ const Services = () => {
               animate="show" 
               exit="hidden"
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-              lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam.
+              Welcome to my portfolio! I specialize in a diverse range of services to cater to your digital needs. Here&apos;s a glimpse of what I offer:
             </motion.p>
           </div>
 
