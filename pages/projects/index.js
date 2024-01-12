@@ -88,7 +88,7 @@ const ProjectsSection = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="h2 text-center md:mt-40"
+                className="h2 text-center md:mt-40 mb-0"
               >
                 My Projects <span className="text-accent">.</span>
               </motion.h2>
@@ -97,7 +97,7 @@ const ProjectsSection = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-white flex flex-row justify-center items-center gap-2 py-4"
+                className="text-white flex flex-row justify-center items-center gap-2 py-4 mb-2"
               >
                 <ProjectTag
                   onClick={() => handleTagChange("All")}

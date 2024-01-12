@@ -25,11 +25,11 @@ export const navData = [
     path: '/projects',
     icon: <HiViewColumns /> ,
   },
-  {
-    name: 'contact',
-    path: '/contact',
-    icon: <HiEnvelope />,
-  },
+  // {
+  //   name: 'contact',
+  //   path: '/contact',
+  //   icon: <HiEnvelope />,
+  // },
 ];
 
 const Nav = () => {
